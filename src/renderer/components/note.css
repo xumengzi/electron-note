@@ -3,7 +3,6 @@
 body {
   padding: 0;
   margin: 0;
-  font-family: "微软雅黑";
 }
 
 ul {
@@ -37,19 +36,21 @@ body {
   top: 4px;
   right: 10px;
   border-radius: 50%;
-  display: inline-block;
-  background: url(../img/add.png);
-  background-size: cover;
-  box-shadow: #e74c3c 0 0 10px;
+  font-weight: bold;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   -webkit-transform: rotate(0);
       -ms-transform: rotate(0);
           transform: rotate(0);
-  -webkit-transition: all ease-in-out .7s;
-          transition: all ease-in-out .7s;
+  -webkit-transition: all ease-in-out .3s;
+          transition: all ease-in-out .3s;
   z-index: 10000;
   cursor: pointer;
 }
 #myNote .addNew:hover {
+  box-shadow: #e74c3c 0 0 10px;
   -webkit-filter: brightness(1.2);
           filter: brightness(1.2);
 }
@@ -166,27 +167,21 @@ ul.notes li input, ul.notes li .newNote .content textarea, .newNote .content ul.
   font-weight: 700;
 }
 ul.notes li .deleteNote {
-  width: 20px;
-  height: 20px;
   display: inline-block;
   position: absolute;
-  right: 0;
+  right: 2px;
   bottom: 0;
   display: none;
-  background: url(../img/trash2.png);
-  background-size: cover;
+  font-size: 12px;
   cursor: pointer;
 }
 ul.notes li .saveNote {
-  width: 18px;
-  height: 16px;
   display: inline-block;
   position: absolute;
-  left: 4px;
-  bottom: 4px;
+  left: 2px;
+  bottom: 0px;
   display: none;
-  background: url(../img/save.png);
-  background-size: 100% 100%;
+  font-size: 12px;
   cursor: pointer;
 }
 ul.notes li .title {
@@ -211,7 +206,6 @@ ul.notes li .content textarea {
   background: inherit;
   text-indent: 2px;
   line-height: 28px;
-  font-family: consolas;
   font-weight: 700;
   color: inherit;
 }
@@ -292,7 +286,6 @@ ul.notes li .content textarea {
 }
 .newNote .content .create {
   display: block;
-  font-family: consolas;
   line-height: 30px;
   font-size: 16px;
   border-radius: 8px;
